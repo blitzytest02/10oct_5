@@ -1,22 +1,22 @@
-# Node.js Express Tutorial Server
+# Python Flask Tutorial Server
 
-A simple Node.js tutorial project demonstrating the Express.js framework with two basic GET endpoints.
+A simple Python tutorial project demonstrating the Flask framework with two basic GET endpoints.
 
 ## Description
 
-This project serves as an educational example of building a web server with Node.js and Express.js. It implements a minimal HTTP server with two endpoints that return plain text responses, perfect for learning the fundamentals of Express.js routing and request handling.
+This project serves as an educational example of building a web server with Python and Flask. It implements a minimal HTTP server with two endpoints that return plain text responses, perfect for learning the fundamentals of Flask routing and request handling.
 
 ## Prerequisites
 
 Before running this project, ensure you have the following installed:
 
-- **Node.js**: Version 18.0.0 or higher (required for Express.js 5.x)
-- **npm**: Node Package Manager (comes bundled with Node.js)
+- **Python**: Version 3.8 or higher (required for Flask 3.x)
+- **pip**: Python Package Manager (comes bundled with Python)
 
 You can verify your installations by running:
 ```bash
-node --version
-npm --version
+python --version
+pip --version
 ```
 
 ## Installation
@@ -29,30 +29,36 @@ Follow these steps to set up the project:
    cd <repository-directory>
    ```
 
-2. **Install dependencies**:
+2. **Create a virtual environment** (recommended):
    ```bash
-   npm install
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
-   This will install Express.js 5.1.0 and its 67 transitive dependencies (68 packages total).
+
+3. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   This will install Flask 3.1.0 and its dependencies.
 
 ## Usage
 
-To start the server, run one of the following commands:
+To start the server, run the following command:
 
 ```bash
-npm start
+python app.py
 ```
 
-Or directly:
+Or using Flask's development server:
 
 ```bash
-node server.js
+flask run --port 3000
 ```
 
 The server will start and listen on port 3000 by default. You can configure a different port by setting the `PORT` environment variable:
 
 ```bash
-PORT=8080 npm start
+PORT=8080 python app.py
 ```
 
 Upon successful startup, you'll see the following message in your console:
@@ -108,19 +114,18 @@ curl http://localhost:3000/evening
 
 ```
 .
-├── .gitignore          # Git ignore patterns for Node.js projects
+├── .gitignore          # Git ignore patterns for Python projects
 ├── README.md           # This file
-├── package.json        # Project manifest with dependencies
-├── package-lock.json   # Dependency lock file for reproducible builds
-├── server.js           # Main server entry point
-└── node_modules/       # Installed dependencies (not tracked in git)
+├── requirements.txt    # Python dependencies manifest
+├── app.py              # Main server entry point
+└── venv/               # Virtual environment (not tracked in git)
 ```
 
 ## Technology Stack
 
-- **Runtime**: Node.js (v18+)
-- **Framework**: Express.js (v5.1.0)
-- **Package Manager**: npm
+- **Runtime**: Python (v3.8+)
+- **Framework**: Flask (v3.1.0)
+- **Package Manager**: pip
 
 ## License
 
