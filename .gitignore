@@ -1,18 +1,9 @@
-# Python dependencies
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-venv/
-env/
-ENV/
-.venv
+# Dependencies
+node_modules/
 
-# Log files
+# Logs
 *.log
-pip-log.txt
-pip-delete-this-directory.txt
+npm-debug.log*
 
 # Environment files
 .env
@@ -22,13 +13,6 @@ pip-delete-this-directory.txt
 # macOS system files
 .DS_Store
 
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Distribution / packaging
-dist/
-build/
-*.egg-info/
+# Optional: Keep package-lock.json for reproducible builds
+# Uncomment the line below if you want to exclude it
+# package-lock.json
