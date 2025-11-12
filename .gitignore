@@ -1,7 +1,7 @@
 # Dependencies
 node_modules/
 
-# Logs
+# Log files
 *.log
 npm-debug.log*
 
@@ -12,7 +12,3 @@ npm-debug.log*
 
 # macOS system files
 .DS_Store
-
-# Optional: Keep package-lock.json for reproducible builds
-# Uncomment the line below if you want to exclude it
-# package-lock.json
